@@ -1,6 +1,6 @@
-age = 24
-ft = 42
+a = 24
+b = 42
 
-my_age = age + ft
+my_age = a + b
 
 print(my_age)
