@@ -2,5 +2,5 @@
 
 origin_arr = [2, 8, 9, 48, 8, 22, -12, 2]
 print(origin_arr)
-new_arr = [y for x in origin_arr for y in [x + 2] if y > 5]
+new_arr = [x + 2 for x in origin_arr if x > 5]
 print(new_arr)
