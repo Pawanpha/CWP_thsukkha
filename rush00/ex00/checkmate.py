@@ -24,7 +24,6 @@ def checkmate(board):
         r, c = kr + dr, kc + dc
         while 0 <= r < n and 0 <= c < n:
             ch = rows[r][c]
-            print(ch)
             if ch in "PRBQK":
                 return ch
             r += dr
@@ -50,7 +49,6 @@ def checkmate(board):
 
     # Pawn attacks
     if not in_check:
-        # Pawns attack diagonally upward (toward decreasing row index)
         for pr, pc in ((kr + 1, kc - 1), (kr + 1, kc + 1)):
             if 0 <= pr < n and 0 <= pc < n and rows[pr][pc] == 'P':
                 in_check = True

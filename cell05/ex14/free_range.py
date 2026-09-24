@@ -5,7 +5,5 @@ import sys
 if len(sys.argv) != 3:
     print("none")
 else:
-    start = int(sys.argv[1])
-    end = int(sys.argv[2])
-    array = list(range(start, end + 1))
+    array = list(range(int(sys.argv[1]), int(sys.argv[2]) + 1))
     print(array)
