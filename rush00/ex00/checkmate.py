@@ -1,4 +1,7 @@
 def checkmate(board):
+    if isinstance(board, str):
+        return "board must be string"
+    
     rows = board.splitlines()
 
     # Validate square board
